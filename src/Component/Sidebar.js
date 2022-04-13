@@ -18,7 +18,7 @@ function Sidebar() {
       <div className="sidebar_options">
         <div className="sidebar_option">
           <MobileScreenShareIcon />
-          <span>My Drive</span>
+          <span>My Drives</span>
         </div>
         <div className="sidebar_option">
           <DevicesIcon />
