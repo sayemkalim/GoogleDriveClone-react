@@ -6,7 +6,8 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import AppsIcon from '@mui/icons-material/Apps';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-function Header() {
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+function Header({photoURL}) {
   return (
     <div class='header'>
     <div class='header_logo'>
@@ -17,12 +18,13 @@ function Header() {
       <SearchIcon/>
       <input type="text" placeholder='Search in Clone Drive'/>
       <FormatAlignCenterIcon/>
+      <NotificationsNoneOutlinedIcon/>
     </div>
     <div class='header_icons'>
     <span><HelpOutlineIcon/></span>
     <span><SettingsOutlinedIcon/></span>
     <span><AppsIcon/></span>
-    <span><AccountCircleOutlinedIcon/></span>
+    <span><AccountCircleOutlinedIcon src={photoURL}/></span>
       
     </div>
     </div>
